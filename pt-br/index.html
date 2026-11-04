@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeraSync</title>
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><img src="../logo.png" alt="" width="40" height="40">GeraSync</a>
+  <nav><a href="index.html">Início</a> <a href="privacidade.html">Política de Privacidade</a> <a href="termos.html">Termos de Serviço</a> · <a href="../index.html" hreflang="en">English</a></nav>
+</header>
+<main>
+<h1>GeraSync</h1>
+<p class="lead">O <strong>GeraSync for Google Drive</strong> é um cliente não oficial do Google
+Drive para Linux, de código aberto (GPL-3.0). O seu Drive inteiro aparece como uma pasta no
+computador, e os arquivos ficam na nuvem até você abrir.</p>
+<p><a class="button" href="https://github.com/junior9283/gdrive-desktop-linux/releases/latest">Baixar o GeraSync</a></p>
+<p class="small">Na página do release, escolha os arquivos que começam com <code>gerasync</code>:
+<code>.deb</code> (Ubuntu, Debian), <code>.rpm</code> (Fedora, openSUSE),
+<code>.pkg.tar.zst</code> (Arch) ou <code>.tar.gz</code> (qualquer distribuição). Instale, entre
+com o Google e use: não precisa criar projeto no Google Cloud nem Client ID.</p>
+
+<h2>O que ele faz</h2>
+<ul>
+  <li>Mostra o Meu Drive e os Drives compartilhados como a pasta <code>~/GeraSync</code> no gerenciador de arquivos.</li>
+  <li>Abre os arquivos sob demanda e envia ao Drive o que você edita, renomeia, move ou apaga na
+  pasta (o que você apaga vai para a lixeira do Drive).</li>
+  <li>Deixa arquivos e pastas escolhidos disponíveis off-line, pode espelhar o Meu Drive inteiro
+  numa pasta do computador e faz backup de pastas do computador e de pendrives no Drive.</li>
+  <li>Põe emblemas de estado, compartilhamento, versões e atalhos no menu do botão direito, além de
+  ícone na bandeja, pesquisa, notificações e até 4 contas ao mesmo tempo.</li>
+</ul>
+
+<h2>Por que o GeraSync precisa de acesso ao seu Google Drive</h2>
+<p>No login, o GeraSync pede permissão para ver, editar, criar e excluir os arquivos do seu Google
+Drive (o escopo <code>drive</code>) e o seu endereço de e-mail. O acesso completo ao Drive é
+necessário para listar tudo o que está nele, inclusive o que foi criado na web ou por outros apps,
+abrir esses arquivos e enviar as alterações que você faz na pasta. O e-mail serve só para saber
+qual conta está conectada.</p>
+
+<h2>Seus dados ficam entre o seu computador e o Google</h2>
+<p>O GeraSync roda inteiro no seu computador e conversa direto com as APIs do Google. Não existe
+servidor do GeraSync: o projeto nunca recebe seus arquivos, os dados da sua conta nem estatísticas
+de uso. O token de login fica no chaveiro do sistema. Leia a <a href="privacidade.html">Política
+de Privacidade</a> e os <a href="termos.html">Termos de Serviço</a>.</p>
+
+<h2>Ajuda e contato</h2>
+<p>Dúvidas e suporte: <a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a>. Relatos de problema e código-fonte:
+<a href="https://github.com/junior9283/gdrive-desktop-linux">github.com/junior9283/gdrive-desktop-linux</a>.</p>
+</main>
+<footer>O GeraSync não tem ligação com o Google. Google Drive é marca do Google LLC. · <a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a></footer>
+</body>
+</html>

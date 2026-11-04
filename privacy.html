@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>GeraSync Privacy Policy</title>
+<link rel="icon" href="logo.png">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><img src="logo.png" alt="" width="40" height="40">GeraSync</a>
+  <nav><a href="index.html">Home</a> <a href="privacy.html">Privacy Policy</a> <a href="terms.html">Terms of Service</a> · <a href="pt-br/privacidade.html" hreflang="pt-BR">Português</a></nav>
+</header>
+<main>
+<h1>GeraSync Privacy Policy</h1>
+<p class="small">Last updated: November 4, 2026</p>
+<p>GeraSync for Google Drive ("GeraSync") is an unofficial, open-source (GPL-3.0) Google Drive
+desktop client for Linux. It is not affiliated with or endorsed by Google. This policy explains
+which data GeraSync accesses, how it uses, stores and shares it, and how you can delete it.</p>
+
+<h2>Data GeraSync accesses</h2>
+<p>When you sign in, GeraSync asks Google for these permissions:</p>
+<ul>
+  <li><strong>Google Drive</strong> (<code>https://www.googleapis.com/auth/drive</code>): the list
+  of your files and folders in My Drive and in the shared drives you can access, their metadata
+  (names, folders, sizes, dates, revisions, sharing), and the content of the files you open, pin
+  for offline use or sync.</li>
+  <li><strong>Your email address and account identifier</strong> (<code>openid</code>,
+  <code>email</code>): to show which Google account is connected and keep each account's data
+  apart.</li>
+</ul>
+
+<h2>How GeraSync uses the data</h2>
+<p>Only to provide the features you see in the app: show your Drive as a folder on your computer,
+open files, send the changes you make in that folder, keep files available offline, mirror or back
+up the folders you choose, and, when you ask for it, share a file, show its versions, create a
+shortcut or create a shared drive. GeraSync does not use your data for advertising, does not sell
+it and does not use it to build profiles.</p>
+
+<h2>Where the data is stored</h2>
+<p>Only on your own computer:</p>
+<ul>
+  <li>File metadata, in a local database, so the folder opens without asking Google on every access.</li>
+  <li>The content you opened or marked as available offline, in a local cache, until it is freed.</li>
+  <li>The sign-in token of each connected account (up to 4), in your system keyring (Secret
+  Service), never in a plain-text file.</li>
+  <li>App preferences and logs, in your user's configuration and state folders.</li>
+</ul>
+<p>Data travels between your computer and Google over encrypted connections (HTTPS).</p>
+
+<h2>Sharing</h2>
+<p>GeraSync has no server. The developer never receives, stores or reads your Google data, and
+GeraSync does not transfer it to anyone. The app talks only to:</p>
+<ul>
+  <li>Google's sign-in and Google Drive APIs;</li>
+  <li>once a day, GitHub's public API, only to check the latest app version
+  (<code>api.github.com/repos/junior9283/gdrive-desktop-linux/releases/latest</code>). The request
+  carries only the installed version, and none of your data.</li>
+</ul>
+<p>GeraSync sends no usage statistics or telemetry. "Send feedback" and, if you turn on error
+reports (off by default), "Send report" only open the project's issue page in your browser with the
+text filled in; you decide whether to post it. The diagnostics package stays on your computer.</p>
+
+<h2>Limited Use</h2>
+<p>GeraSync's use and transfer to any other app of information received from Google APIs will
+adhere to the <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>, including the Limited
+Use requirements. In particular, the data is used only to provide the features described above;
+it is not transferred to others except as needed to provide those features, to comply with
+applicable law or as part of a merger or acquisition; it is not used for advertising; and no person
+reads it unless you ask for help and give permission, it is needed for security or to comply with
+the law.</p>
+
+<h2>How to delete your data or revoke access</h2>
+<ul>
+  <li>In GeraSync, open the account menu and choose <strong>Disconnect account</strong>. The token,
+  the cache and the offline files of that account are removed from your computer.</li>
+  <li>Uninstalling GeraSync from its window removes the programs; the preferences in
+  <code>~/.config/gerasync</code> can be deleted by hand.</li>
+  <li>You can revoke GeraSync's access at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Your files in Google Drive are governed by Google's own terms and are not touched by
+disconnecting or uninstalling.</p>
+
+<h2>Changes and contact</h2>
+<p>Changes to this policy are published on this page with a new date. Questions:
+<a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a>.</p>
+</main>
+<footer>GeraSync is not affiliated with Google. Google Drive is a trademark of Google LLC. · <a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a></footer>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Política de Privacidade do GeraSync</title>
+<link rel="icon" href="../logo.png">
+<link rel="stylesheet" href="../style.css">
+</head>
+<body>
+<header>
+  <a class="brand" href="index.html"><img src="../logo.png" alt="" width="40" height="40">GeraSync</a>
+  <nav><a href="index.html">Início</a> <a href="privacidade.html">Política de Privacidade</a> <a href="termos.html">Termos de Serviço</a> · <a href="../privacy.html" hreflang="en">English</a></nav>
+</header>
+<main>
+<h1>Política de Privacidade do GeraSync</h1>
+<p class="small">Atualizada em 4 de novembro de 2026</p>
+<p>O GeraSync for Google Drive ("GeraSync") é um cliente não oficial do Google Drive para Linux, de
+código aberto (GPL-3.0). Ele não tem ligação com o Google nem aprovação dele. Esta política explica
+quais dados o GeraSync acessa, como os usa, guarda e compartilha, e como você pode apagá-los.</p>
+
+<h2>Dados que o GeraSync acessa</h2>
+<p>No login, o GeraSync pede ao Google estas permissões:</p>
+<ul>
+  <li><strong>Google Drive</strong> (<code>https://www.googleapis.com/auth/drive</code>): a lista dos
+  seus arquivos e pastas no Meu Drive e nos Drives compartilhados a que você tem acesso, os
+  metadados deles (nomes, pastas, tamanhos, datas, revisões, compartilhamento) e o conteúdo dos
+  arquivos que você abre, marca como off-line ou sincroniza.</li>
+  <li><strong>Seu endereço de e-mail e o identificador da conta</strong> (<code>openid</code>,
+  <code>email</code>): para mostrar qual conta do Google está conectada e manter separados os dados
+  de cada conta.</li>
+</ul>
+
+<h2>Como o GeraSync usa os dados</h2>
+<p>Só para oferecer os recursos que você vê no app: mostrar o Drive como uma pasta no computador,
+abrir arquivos, enviar as alterações que você faz nessa pasta, manter arquivos disponíveis
+off-line, espelhar ou fazer backup das pastas que você escolhe e, quando você pede, compartilhar um
+arquivo, mostrar as versões, criar um atalho ou criar um Drive compartilhado. O GeraSync não usa
+seus dados para publicidade, não os vende e não monta perfis com eles.</p>
+
+<h2>Onde os dados ficam</h2>
+<p>Só no seu computador:</p>
+<ul>
+  <li>Os metadados dos arquivos, num banco local, para a pasta abrir sem consultar o Google a cada acesso.</li>
+  <li>O conteúdo que você abriu ou marcou como off-line, num cache local, até ser liberado.</li>
+  <li>O token de login de cada conta conectada (até 4), no chaveiro do sistema (Secret Service),
+  nunca em arquivo de texto.</li>
+  <li>As preferências e os registros do app, nas pastas de configuração e de estado do seu usuário.</li>
+</ul>
+<p>Os dados trafegam entre o seu computador e o Google por conexões cifradas (HTTPS).</p>
+
+<h2>Compartilhamento</h2>
+<p>O GeraSync não tem servidor. O desenvolvedor nunca recebe, guarda nem lê seus dados do Google, e
+o GeraSync não os transfere a ninguém. O app só conversa com:</p>
+<ul>
+  <li>as APIs de login e do Google Drive, do Google;</li>
+  <li>uma vez por dia, a API pública do GitHub, só para saber a última versão do app
+  (<code>api.github.com/repos/junior9283/gdrive-desktop-linux/releases/latest</code>). O pedido leva
+  apenas a versão instalada, nenhum dado seu.</li>
+</ul>
+<p>O GeraSync não envia estatísticas de uso nem telemetria. "Enviar feedback" e, com o relatório de
+erros ligado (vem desligado), "Enviar relatório" só abrem no navegador a página de issues do
+projeto com o texto preenchido; quem decide publicar é você. O pacote de diagnóstico fica no seu
+computador.</p>
+
+<h2>Uso limitado</h2>
+<p>O uso e a transferência para qualquer outro app das informações recebidas das APIs do Google
+seguem a <a href="https://developers.google.com/terms/api-services-user-data-policy">Política de dados do usuário dos serviços de API do Google</a>,
+incluindo os requisitos de uso limitado. Em especial, os dados são usados só para os recursos
+descritos acima; não são transferidos a terceiros, a não ser quando necessário para esses recursos,
+para cumprir a lei ou numa fusão ou aquisição; não são usados para publicidade; e ninguém os lê, a
+não ser que você peça ajuda e autorize, ou quando for necessário por segurança ou para cumprir a
+lei.</p>
+
+<h2>Como apagar seus dados ou revogar o acesso</h2>
+<ul>
+  <li>No GeraSync, abra o menu da conta e escolha <strong>Desconectar a conta</strong>. O token, o
+  cache e os arquivos off-line daquela conta saem do seu computador.</li>
+  <li>Desinstalar o GeraSync pela janela dele remove os programas; as preferências em
+  <code>~/.config/gerasync</code> podem ser apagadas à mão.</li>
+  <li>Você pode revogar o acesso do GeraSync a qualquer momento em
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+</ul>
+<p>Os seus arquivos no Google Drive seguem os termos do próprio Google e não são tocados quando você
+desconecta ou desinstala o app.</p>
+
+<h2>Mudanças e contato</h2>
+<p>Mudanças nesta política são publicadas nesta página, com nova data. Dúvidas:
+<a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a>.</p>
+</main>
+<footer>O GeraSync não tem ligação com o Google. Google Drive é marca do Google LLC. · <a href="mailto:gerasync@googlegroups.com">gerasync@googlegroups.com</a></footer>
+</body>
+</html>
