@@ -15,7 +15,7 @@
 </header>
 <main>
 <h1>GeraSync Privacy Policy</h1>
-<p class="small">Last updated: November 4, 2026</p>
+<p class="small">Last updated: November 7, 2026</p>
 <p>GeraSync for Google Drive ("GeraSync") is an unofficial, open-source (GPL-3.0) Google Drive
 desktop client for Linux. It is not affiliated with or endorsed by Google. This policy explains
 which data GeraSync accesses, how it uses, stores and shares it, and how you can delete it.</p>
@@ -58,6 +58,9 @@ GeraSync does not transfer it to anyone. The app talks only to:</p>
   <li>once a day, GitHub's public API, only to check the latest app version
   (<code>api.github.com/repos/junior9283/gdrive-desktop-linux/releases/latest</code>). The request
   carries only the installed version, and none of your data.</li>
+  <li>when you choose <strong>Update now</strong>, GitHub again, to download from the release page the
+  app package, its <code>SHA256SUMS</code> and their signature. None of your data goes with it; the
+  package is installed only if the project's signature and the checksum match.</li>
 </ul>
 <p>GeraSync sends no usage statistics or telemetry. "Send feedback" and, if you turn on error
 reports (off by default), "Send report" only open the project's issue page in your browser with the
